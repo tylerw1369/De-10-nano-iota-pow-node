@@ -17,6 +17,9 @@ Thirdly SteppoFF for his pow node project called iota.keccak.pow.node written in
 
 Next Georg Mittendorfer and his piri project that is used as a load balancer to intercept the api call attachToTangle command and send it to the fpga. His project is found here: https://gitlab.com/georg.mittendorfer/piri
 
+Also my node has the de10-nano as pow so its pretty fast if you want to use it.  Nodes address is:
+https://www.iotaqubic.us:443
+
 If you have any questions or anything doesnt work for you let me know and I will look at it.
 If you want to donate you can here. Iota Address
 UAYLMAJXMWENHKFCNJQZDZWAGAEKWYXFTMPXPQYUKYMOSJIYAJVJUTFMPMYTPKCBXDUCWIEEYOTSYMRFAKLWHKTUWD
