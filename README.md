@@ -24,20 +24,33 @@ Also my node has the de10-nano as pow so its pretty fast if you want to use it. 
 https://www.iotaqubic.us:443
 
 Steps:
+
 Download image file and copy to sd
+
 Start nano and login using ubuntu/temppwd
+
 Install node js 10
+
 Clone dcurl
+
 Clone keccak.pow.node
+
 Enter keccak.pow folder and run npm install
+
 Go to home folder with kernel mod
+
 sudo insmod cpowdrv.ko 
+
 CD to dcurl folder and run
 
 make BUILD_FPGA_ACCEL=1 BUILD_COMPAT=1
+
 CD to build folder and make sure libdcurl.so is in the directory
+
 cp libdcurl.so /home/ubuntu/iota.keccak.pow.node.js/libccurl.so
+
 Then enter the iota.keccak.pow.node.js and run
+
 sudo node main.js
 
 Enjoy your iota pow node
