@@ -5,13 +5,16 @@ These are instructions to take a de-10 nano fpga with a cyclone V chip and use i
 The download to the image file to burn to the sdcard.
 https://drive.google.com/file/d/19KkvdSOrfzdIu9nH8WNp0dlvS3eXV10p/view?usp=sharing
 
+You will need to install node.js 10 or newer. 
+
 I want to make thank the following projects that helped me put all of this together in one place. 
 This is a conglomerate of the following projects:
 
 Firstly Lampa de10 nano project found here: https://github.com/LampaLab/iota_fpga
 I took their image and updated it to work with the node iotapow software. I wasnt able to get it to function correctly with it being linux-gneaubi so i took it and updated it to gneaubihf.  I also updated the kernel to a newer version and got the cpowdrv.ko module updated and compiled to work for the newer kernel.
 
-Secondly DLTcollab and their dcurl project that they have put together to make iota pow much quicker and easier found here: https://github.com/DLTcollab/dcurl
+Secondly DLTcollab and their dcurl project that they have put together to make iota pow much quicker and easier found here: https://github.com/tylerw1369/dcurl
+
 
 Thirdly SteppoFF for his pow node project called iota.keccak.pow.node written in JS found here: https://github.com/SteppoFF/iota.keccak.pow.node.js
 
@@ -19,6 +22,26 @@ Next Georg Mittendorfer and his piri project that is used as a load balancer to 
 
 Also my node has the de10-nano as pow so its pretty fast if you want to use it.  Nodes address is:
 https://www.iotaqubic.us:443
+
+Steps:
+Download image file and copy to sd
+Start nano and login using ubuntu/temppwd
+Install node js 10
+Clone dcurl
+Clone keccak.pow.node
+Enter keccak.pow folder and run npm install
+Go to home folder with kernel mod
+sudo insmod cpowdrv.ko 
+CD to dcurl folder and run
+
+make BUILD_FPGA_ACCEL=1 BUILD_COMPAT=1
+CD to build folder and make sure libdcurl.so is in the directory
+cp libdcurl.so /home/ubuntu/iota.keccak.pow.node.js/libccurl.so
+Then enter the iota.keccak.pow.node.js and run
+sudo node main.js
+
+Enjoy your iota pow node
+
 
 If you have any questions or anything doesnt work for you let me know and I will look at it.
 If you want to donate you can here. Iota Address
