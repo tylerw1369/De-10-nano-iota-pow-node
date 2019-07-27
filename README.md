@@ -37,6 +37,8 @@ Clone keccak.pow.node
 
 Enter keccak.pow folder and run npm install
 
+Make sure dip switches on the de10-nano are all set in the on position. 
+
 Go to home folder with kernel mod
 
 sudo insmod cpowdrv.ko 
