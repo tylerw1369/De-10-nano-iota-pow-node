@@ -7,7 +7,7 @@ https://drive.google.com/open?id=1MeDEe8BejW0C4a3pWf-B0BU9f_b9DMfD
 
 You will need to install node.js 10 or newer. 
 
-I want to make thank the following projects that helped me put all of this together in one place. 
+I want to thank the following projects that helped me put all of this together in one place. 
 This is a conglomerate of the following projects:
 
 Firstly Lampa de10 nano project found here: https://github.com/LampaLab/iota_fpga
