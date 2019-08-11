@@ -11,7 +11,7 @@ I want to make thank the following projects that helped me put all of this toget
 This is a conglomerate of the following projects:
 
 Firstly Lampa de10 nano project found here: https://github.com/LampaLab/iota_fpga
-I took their image and updated it to work with the node iotapow software. I wasnt able to get it to function correctly with it being linux-gneaubi so i took it and updated it to gneaubihf.  I also updated the kernel to a newer version and got the cpowdrv.ko module updated and compiled to work for the newer kernel.
+I took their image and updated it to work with the node iotapow software. I wasnt able to get it to function correctly with it being linux-gnueabi so i took it and updated it to gnueabihf.  I also updated the kernel to a newer version and got the cpowdrv.ko module updated and compiled to work for the newer kernel.
 
 Secondly DLTcollab and their dcurl project that they have put together to make iota pow much quicker and easier found here: https://github.com/tylerw1369/dcurl
 
